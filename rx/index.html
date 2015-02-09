@@ -7,11 +7,18 @@
                 margin: 0px;
                 padding: 0px;
             }
+            canvas {
+                border: 10px grey solid;
+                position: absolute;
+                left: 50px;
+                top: 70px;
+            }
         </style>
     </head>
     <body>
         <h1>Rx Pong Game</h1>
-        <canvas id="myCanvas" width="1024" height="200"></canvas>
+        <canvas id="fieldCanvas"></canvas>
+        <canvas id="myCanvas"></canvas>
 
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/rxjs/dist/rx.all.js"></script>
